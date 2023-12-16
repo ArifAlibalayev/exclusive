@@ -1,0 +1,53 @@
+.navlinkopened{
+    text-decoration: none;
+    color: black;
+
+}
+
+.navlinkpending{
+    text-decoration: none;
+    color: black;
+}
+
+
+// //////////////////////////////////////
+
+#Header{
+    min-height: 10vh;
+    #headerNav{
+        max-width: 75%;
+        margin:1% auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .navBtns ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        }
+        .sbmBtns{
+            display: flex;
+            justify-content: center;
+        align-items: center;
+        gap: 50px;
+        .search{
+            input{
+                border: none;
+                outline: none;
+                padding: 30px;
+            }
+            font-size: 18px;
+        }
+        
+        .basketwishlist{
+            display: flex;
+        //     justify-content: center;
+        // align-items: center;
+        gap: 25px;
+        font-size: 22px;
+        }
+        }
+    }
+
+}
