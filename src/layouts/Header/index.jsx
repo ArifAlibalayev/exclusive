@@ -7,7 +7,8 @@ function Header() {
     <header id='Header'>
       <nav id='headerNav'>
         <div className="logo">
-          <h2>Exclusive</h2>
+          
+          <NavLink to={"/"} className={true ?  "navlinkopened" : "navlinkpending"}><h2>Exclusive</h2></NavLink>
         </div>
         <div className="navBtns">
           <ul>
@@ -24,7 +25,7 @@ function Header() {
            <i class="fa-solid fa-magnifying-glass"></i>
           </div>
           <div className="basketwishlist">
-          <i class="fa-solid fa-cart-shopping"></i>
+          <NavLink to={"/Basket"} className={true ?  "navlinkopened" : "navlinkpending"}><li><i class="fa-solid fa-cart-shopping"></i></li></NavLink>
           <i class="fa-regular fa-heart"></i>
           </div>
         </div>

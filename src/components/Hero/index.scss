@@ -19,4 +19,13 @@ min-height: 35vh;
       }
 }
 
-
+@media screen and (max-width:800px){
+    #Hero{
+        .heroOptions{
+            display: none;
+        }
+        .heroBanner{
+            width: 100%;
+        }
+    }
+ }

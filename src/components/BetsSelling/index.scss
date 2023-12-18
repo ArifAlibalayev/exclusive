@@ -79,4 +79,15 @@
             color: black;
         }
     }
+    .viewAll{
+        background-color: rgb(188, 12, 12);
+        color: white;
+        padding: 12px 30px;
+        cursor: pointer;
+        transition: .3s linear;
+        &:hover{
+            background-color: rgb(237, 14, 14);
+
+        }
+    }
 }

@@ -1,12 +1,13 @@
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import React, { useContext, useEffect, useState } from "react";
 import '@splidejs/react-splide/css';
-import './index.scss'
+import "./index.scss"
 import { BasketContext } from "../../context/BasketProvider";
 
-function CarouselSection() {
+function BestSelling() {
   const [apiData, setApiData] = useState([]);
   const {basket, AddToBasket} = useContext(BasketContext)
+
 
   useEffect(() => {
     getData();
@@ -20,18 +21,17 @@ function CarouselSection() {
     setApiData(data);
   }
 
-  const forCarousel = apiData.splice(7, 10);
+  const forCarousel = apiData.splice(17, 10);
   return (
     <section id="SliderCarousel">
       <div className="categoriesTitle">
-            <p>Today's</p>
+            <p>This month</p>
         </div>
         <div className="browsesByCategory">
-            <h2>Flash Sales</h2>
-            {/* <div className="arrowsCategory">
-            <i class="fa-solid fa-arrow-left"></i>
-            <i class="fa-solid fa-arrow-right"></i>
-            </div> */}
+            <h2>Best Selling Products</h2>
+            <div className="viewAll">
+                <p>View All</p>
+            </div>
         </div>
       <Splide
         aria-label="My Favorite Images"
@@ -54,7 +54,7 @@ function CarouselSection() {
                 <i class="fa-regular fa-heart"></i>
                     <img src={x.thumbnail} alt="" />
                 <div className="addToCart">
-                    <h3 onClick={()=>AddToBasket(x)}>Add To Cart</h3>
+                    <h3  onClick={()=>AddToBasket(x)}>Add To Cart</h3>
                 </div>
                 </div>
                 <h4>{x.name}</h4>
@@ -69,9 +69,9 @@ function CarouselSection() {
             </div></SplideSlide>
         ))}
         
-      </Splide>
+      </Splide> 
     </section>
   );
 }
 
-export default CarouselSection;
+export default BestSelling;

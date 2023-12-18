@@ -1,0 +1,56 @@
+#footer{
+    margin-top: 5%;
+    width: 100%;
+    background-color: black;
+    min-height: 40vh;
+    .footerUp{
+        max-width: 75%;
+        margin: 0 auto;
+        padding: 100px 0;
+        display: flex;
+        gap: 10%;
+        h3{
+            font-size: 24px;
+        }
+        .ExclusiveSub{
+            line-height: 50px;
+            color: white;
+            
+            p{
+                font-size: 14px;
+            }
+            .emailFooter{
+                border: 1px solid white;
+                padding: 2px 20px;
+                input{
+                    padding: 0 5px;
+                    border: none;
+                    outline: none;
+                    background-color: transparent;
+                    color: white;
+                }
+            }
+        }
+    }
+    .footerSupport{
+        line-height: 40px;
+            color: white;
+    }
+    .footerAcc{
+        line-height: 40px;
+            color: white;
+    }
+    .footerQL{
+        line-height: 40px;
+            color: white;
+    }
+    .footerDownloadd{
+        line-height: 40px;
+            color: white;
+    }
+}
+@media screen and (max-width:1200px){
+    .footerUp{
+        flex-wrap: wrap !important;
+    }
+}
