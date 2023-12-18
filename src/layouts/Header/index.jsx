@@ -26,7 +26,8 @@ function Header() {
           </div>
           <div className="basketwishlist">
           <NavLink to={"/Basket"} className={true ?  "navlinkopened" : "navlinkpending"}><li><i class="fa-solid fa-cart-shopping"></i></li></NavLink>
-          <i class="fa-regular fa-heart"></i>
+          <NavLink to={"/Wishlist"} className={true ?  "navlinkopened" : "navlinkpending"}><i class="fa-regular fa-heart"></i></NavLink>
+
           </div>
         </div>
       </nav>

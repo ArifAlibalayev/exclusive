@@ -1,6 +1,6 @@
-#products{
+#WishlistProducts{
     max-width: 75%;
-    margin: 50px auto;
+    margin: 100px auto;
     .categoriesTitle{
         p{
             border-left: 10px solid rgb(188, 12, 12);
@@ -26,7 +26,18 @@
             color: black;
         }
     }
-    .productsWrapper{
+    .viewAll{
+        background-color: rgb(188, 12, 12);
+        color: white;
+        padding: 12px 30px;
+        cursor: pointer;
+        transition: .3s linear;
+        &:hover{
+            background-color: rgb(237, 14, 14);
+
+        }
+    }
+    .wishlistSection{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         gap: 30px;
@@ -40,19 +51,11 @@
                         transform: translateY(-10px);
                     }
                 }
-                .fa-eye{
-                    position: absolute;
-                    top: 20px;
-                    right: 15px;
-                }
-                .fa-heart{
+                
+                .fa-trash{
                     position: absolute;
                     top: 50px;
                     right: 15px;
-                    transition: .2s linear;
-                    &:hover{
-                        color: red;
-                    }
                 }
                 .addToCart{
                     bottom: 0;
@@ -86,38 +89,3 @@
         }
     }
 }
-
-.viewMoreBtn{
-    text-align: center;
-    color: white;
-    margin: 100px auto;
-    background-color: rgb(188, 12, 12);
-    padding: 20px 40px;
-    width: 18%;
-    transition: .3s linear;
-    cursor: pointer;
-    &:hover{
-        background-color: rgb(234, 15, 15);
-    }
-}
-
-@media screen and (max-width:1150px){
-    .productsWrapper{
-        grid-template-columns: 1fr 1fr 1fr !important;
-    }
- }
-
- @media screen and (max-width:500px){
-    .productsWrapper{
-        grid-template-columns: 1fr 1fr !important;
-    }
- }
-
- .added{
-    color: red;
- }
-
- .default{
-    color: black;
-    // z-index: 2;
- }

@@ -18,9 +18,10 @@ function CarouselSection() {
     );
     const data = await res.json();
     setApiData(data);
+    const forCarousel = apiData.splice(7, 10);
   }
 
-  const forCarousel = apiData.splice(7, 10);
+  
   return (
     <section id="SliderCarousel">
       <div className="categoriesTitle">
@@ -46,7 +47,7 @@ function CarouselSection() {
         }}
       >
 
-        {forCarousel.map(x=>(
+        {apiData.slice(7, 17).map(x=>(
             <SplideSlide>
             <div className="productCard" key={x.id}>
                 <div className="productImgBox">
