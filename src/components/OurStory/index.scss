@@ -1,0 +1,40 @@
+#OurStory{
+    min-height:40vh; 
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    
+    .ourStoryContent{
+        max-width: 75%;
+        margin: auto;
+        display: flex;
+
+
+
+        .ourStoryInner{
+            display: flex;
+            flex-direction: column;
+            width: 30%;
+            justify-content: center;
+            gap: 40px;
+            h1{
+                font-size: 48px;
+            }
+        }
+        justify-content: space-between;
+        
+    }
+    .ourStoryImg{
+        // position: absolute;
+        //     right: 0;
+        img{
+            width: 50%;
+            // height: 80%;
+            position: absolute;
+            right: 0;
+            top: 0;
+            object-fit: cover;
+        }
+    }
+}

@@ -14,7 +14,7 @@ function Header() {
           <ul>
             <NavLink to={"/"} className={true ?  "navlinkopened" : "navlinkpending"}><li>Home</li></NavLink>
             <NavLink className={true ?  "navlinkopened" : "navlinkpending"}><li>Contact</li></NavLink>
-            <NavLink className={true ?  "navlinkopened" : "navlinkpending"}><li>About</li></NavLink>
+            <NavLink to={"/About"} className={true ?  "navlinkopened" : "navlinkpending"}><li>About</li></NavLink>
             <NavLink className={true ?  "navlinkopened" : "navlinkpending"}><li>Sign Up</li></NavLink>
             
           </ul>

@@ -41,9 +41,28 @@ function CarouselSection() {
           width: "100%",
           gap: "50px",
           perPage: 5,
+          breakpoints:{
+            1000:{
+              perPage:4,
+            },
+            800:{
+              perPage:3,
+            },
+            600:{
+              perPage:2,
+            },
+            400:{
+              perPage:1,
+            },
+
+          },
+          autoScroll: {
+            speed: 3,
+          },
           focus: 0,
           omitEnd: true,
-          pagination:false
+          pagination:false,
+          
         }}
       >
 
