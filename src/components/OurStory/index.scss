@@ -1,5 +1,6 @@
 #OurStory{
-    min-height:40vh; 
+    margin: 100px 0;
+    min-height:60vh; 
     display: flex;
     position: relative;
     justify-content: space-between;
@@ -9,11 +10,13 @@
         max-width: 75%;
         margin: auto;
         display: flex;
+        align-items: center;
 
 
 
         .ourStoryInner{
             display: flex;
+            min-height: 40vh;
             flex-direction: column;
             width: 30%;
             justify-content: center;
@@ -22,7 +25,7 @@
                 font-size: 48px;
             }
         }
-        justify-content: space-between;
+        // justify-content: space-between;
         
     }
     .ourStoryImg{

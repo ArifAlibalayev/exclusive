@@ -1,0 +1,103 @@
+#AboutCategories {
+  max-width: 75%;
+  margin: 200px auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  .aboutCategoriesCard {
+    border: 1px solid rgba($color: #888888, $alpha: 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 300px;
+    min-height: 200px;
+    width: 100%;
+    transition: .2s linear;
+    &:hover{
+      background-color: #DB4444;
+      h3{
+        color: white;
+      }
+      p{
+        color: white;
+      }
+      .svgShadow{
+        svg{
+          fill: white;
+          path{
+            fill: white;
+          }
+          circle{
+            fill: white;
+          }
+        }
+       
+      }
+    }
+    .svgShadow {
+      position: relative;
+      width: 80px;
+      height: 80px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      svg {
+        z-index: 1;
+      }
+    }
+    .svgIcon {
+      position: absolute;
+      width: 80px;
+      height: 80px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      top: 0;
+      right: 0;
+
+      svg {
+        z-index: 1000;
+        path{
+          fill: white;
+        }
+      }
+    }
+  }
+}
+
+
+
+ .aboutCategoriesCard:nth-of-type(3){
+  &:hover{
+    .svgShadow{
+      .svgIcon{
+        svg{
+          // fill: black;
+          // stroke: black;
+          path{
+            fill: black !important;
+          }
+          
+        }
+       }
+    }
+  }
+ }
+
+ .aboutCategoriesCard:nth-of-type(4){
+  &:hover{
+    .svgShadow{
+      .svgIcon{
+        svg{
+          // fill: black;
+          // stroke: black;
+          path{
+            fill: black !important;
+          }
+          
+        }
+       }
+    }
+  }
+ }
